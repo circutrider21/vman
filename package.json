@@ -1,0 +1,19 @@
+{
+  "name": "@circutrider21/vman",
+  "version": "1.0.0",
+  "description": "A Tool That Stores Variables To A File And Then Retrieves It From A File. Can Also Do Other Things",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/circutrider21/vman.git"
+  },
+  "author": "Peeled Fruit Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/circutrider21/vman/issues"
+  },
+  "homepage": "https://github.com/circutrider21/vman#readme"
+}
