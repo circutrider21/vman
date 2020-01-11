@@ -1,6 +1,6 @@
 {
   "name": "@circutrider21/vman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Tool That Stores Variables To A File And Then Retrieves It From A File. Can Also Do Other Things",
   "main": "index.js",
   "publishConfig": { "registry": "https://npm.pkg.github.com/" }, "scripts": {

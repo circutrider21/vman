@@ -1,6 +1,6 @@
 exports.version = function () {
   // body...
-  var version = "1.0.0";
+  var version = "1.0.2";
   console.log(version);
   return version;
 };
