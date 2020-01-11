@@ -10,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/circutrider21/vman.git"
   },
+  "bin": {
+    "vman": "./bin/index.js"
+  },
   "author": "Peeled Fruit Studios",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/circutrider21/vman/issues"
   },
-  "homepage": "https://github.com/circutrider21/vman#readme"
+  "homepage": "https://github.com/circutrider21/vman#readme",
+  "dependencies": {
+    "boxen": "^4.0.0",
+    "chalk": "^2.4.2"
+  }
 }
