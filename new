@@ -3,3 +3,24 @@
   "registry": "https://npm.pkg.github.com/"
 
 },
+
+
+exports.version = function () {
+  // body...
+  var version = "1.0.2";
+  console.log(version);
+};
+
+//exports.parcf = function (filename) {
+  // body...
+  fs.readFile(filename, 'utf-8', (err, data) => {
+    if (err) throw err;
+
+    // Converting Raw Buffer to text
+    // data using tostring function.
+    var info = JSON.parse(data)
+
+    state = info.state
+    country = info.country
+  }
+};
