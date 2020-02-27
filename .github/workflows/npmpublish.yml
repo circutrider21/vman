@@ -15,6 +15,27 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
+      - name: Upload Linux
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: vman-linux
+          # Destination path
+          path: .
+      - name: Upload Windows
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: vman-windows.exe
+          # Destination path
+          path: .
+      - name: Upload OS X
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: vman-macos
+          # Destination path
+          path: .
 
   publish-npm:
     needs: build
