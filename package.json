@@ -11,7 +11,7 @@
     "url": "git+https://github.com/circutrider21/vman.git"
   },
   "bin": {
-    "vman": "./bin/index.js"
+    "vman": "./index.js"
   },
   "author": "Peeled Fruit Studios",
   "license": "MIT",
