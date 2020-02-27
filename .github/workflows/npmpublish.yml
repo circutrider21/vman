@@ -14,8 +14,9 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm test
+      - run: npm install -g pkg
       - run: pkg --out-path . .
+      - run: ls
       - name: Upload Linux
         uses: actions/upload-artifact@v1.0.0
         with:
