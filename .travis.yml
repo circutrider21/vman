@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - 10
+
+sudo: true
+
+install:
+  - npm install -g pkg
+  - npm install
+
+script:
+  - pkg .
+
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "Circutrider21"
+  - git config --local user.email "Circutrider21@gmail.com"
+  - export TRAVIS_TAG=${1.4.0}
+  - git tag $TRAVIS_TAG
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
